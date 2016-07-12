@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WeatherApp</title>
+<!--  <link rel="stylesheet" href="style.css" />-->
+    
+<script src="https://use.typekit.net/vlg3wne.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+        
+<!--    REFRESH BUTTON-->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    
+    
+</head>
+<body>
+    
+    <div>
+	
+    <img src="images/few-clouds.svg" alt="Cloud and Sun" id="WeatherAppIcon">
+    
+    
+    <h1 id="Title">WeatherApp</h1>
+
+	
+<section id="locationForm">
+  <label>
+    <input id="location" type="text" placeholder="Search City" />
+    <button id="btnGo" onKeyPress="return checkSubmit(event)"><img src="images/searchtool.png"></button>
+  </label>
+</section>
+
+
+<!-- This is where we display the relevant icon (SVG) and description when we've returned it from OpenWeatherMap. -->
+
+<section id="weather">
+  <img src="images/default.svg" id="weatherIcon" />
+  <p id="description"></p>
+    
+    <p id="refresh-button"><i class="fa fa-refresh fa-2x fa-spin-hover refresh" onClick="window.location.reload()"></i></p>
+    
+    
+</section>
+    
+    
+    <footer>
+    
+    <p>Designed &amp; Coded by Hayley Gregg &copy;</p>
+    
+    </footer>
+        
+    </div>
+
+
+<!-- Here's the link to our JavaScript that works the magic. -->
+
+<script src="app.js"></script>
+</body>
+</html>
