@@ -111,13 +111,13 @@ function setIconAndDescription(weather, location){
 	if (weather == "clear sky"
 		|| weather == "clear"){
 		
-		icon = "clear.svg";
+		icon = "clear.png";
 		description = "Yay, sunshine!";
 		
 	}
 	else if (weather == "few clouds"){
 		
-		icon = "few-clouds.svg";
+		icon = "few-clouds.png";
 		description = "Looks a bit cloudy today.";
 		
 	}
@@ -125,7 +125,7 @@ function setIconAndDescription(weather, location){
 		|| weather == "broken clouds" 
 		|| weather == "clouds"){
 		
-		icon = "clouds.svg";
+		icon = "clouds.png";
 		description = "Looks like scattered clouds today.";
 		
 	}
@@ -133,31 +133,31 @@ function setIconAndDescription(weather, location){
 	|| weather == "light rain"
 	|| weather == "shower rain"){
 		
-		icon = "rain.svg";
+		icon = "rain.png";
 		description = "Oh no! It's raining!"
 		
 	}
 	else if(weather == "thunderstorm"){
 		
-		icon = "thunder.svg";
+		icon = "thunder.png";
 		description = "Yikes, looks like a storm's brewing!"
 		
 	}
 	else if (weather == "snow"){
 		
-		icon = "snow.svg";
+		icon = "snow.png";
 		description = "Wrap up, it's going to snow!"
 		
 	}
 	else if (weather == "mist"){
 		
-		icon = "mist.svg";
+		icon = "mist.png";
 		description = "Looks a little misty today.";
 		
 	}
 	else {
 		
-		icon = "default.svg";
+		icon = "default.png";
 		description = "Oops, I couldn't find the weather in " + location;
 		
 	}

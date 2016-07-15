@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>WeatherApp</title>
-<!--  <link rel="stylesheet" href="style.css" />-->
+
     
 <script src="https://use.typekit.net/vlg3wne.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -24,7 +24,7 @@
     
     <div>
 	
-    <img src="images/few-clouds.svg" alt="Cloud and Sun" id="WeatherAppIcon">
+    <img src="images/few-clouds.png" alt="Cloud and Sun" id="WeatherAppIcon">
     
     
     <h1 id="Title">WeatherApp</h1>
@@ -33,15 +33,13 @@
 <section id="locationForm">
   <label>
     <input id="location" type="text" placeholder="Search City" />
-    <button id="btnGo" onKeyPress="return checkSubmit(event)"><img src="images/searchtool.png"></button>
+    <button id="btnGo" onKeyPress="return checkSubmit(event)"><img src="images/searchtool.png" alt="Search Icon"></button>
   </label>
 </section>
 
 
-<!-- This is where we display the relevant icon (SVG) and description when we've returned it from OpenWeatherMap. -->
-
 <section id="weather">
-  <img src="images/default.svg" id="weatherIcon" />
+  <img src="images/default.png" id="weatherIcon" alt="Default Weather Icon"/>
   <p id="description"></p>
     
     <p id="refresh-button"><i class="fa fa-refresh fa-2x fa-spin-hover refresh" onClick="window.location.reload()"></i></p>
@@ -59,7 +57,7 @@
     </div>
 
 
-<!-- Here's the link to our JavaScript that works the magic. -->
+<!-- JavaScript link -->
 
 <script src="app.js"></script>
 </body>
